@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.SumAdjacentEqualNumbers"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SplitByWordCasing", "04.SplitByWordCasing\04.SplitByWordCasing.csproj", "{DABC07D8-3777-4571-80ED-3C2EBB1D2B50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.SortNumbers", "05.SortNumbers\05.SortNumbers.csproj", "{AC43FFEF-D58A-4B40-880A-4DD58FCAD6B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DABC07D8-3777-4571-80ED-3C2EBB1D2B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DABC07D8-3777-4571-80ED-3C2EBB1D2B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DABC07D8-3777-4571-80ED-3C2EBB1D2B50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC43FFEF-D58A-4B40-880A-4DD58FCAD6B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC43FFEF-D58A-4B40-880A-4DD58FCAD6B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC43FFEF-D58A-4B40-880A-4DD58FCAD6B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC43FFEF-D58A-4B40-880A-4DD58FCAD6B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
