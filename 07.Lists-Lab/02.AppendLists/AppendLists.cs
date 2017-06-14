@@ -15,7 +15,7 @@ namespace _02.AppendLists
             
             for (int index = input.Length - 1; index >= 0; index--)
             {
-                var tokens = input[index].Split(' ').ToArray();
+                string[] tokens = input[index].Split(' ').ToArray();
                 for (int i = 0; i < tokens.Length; i++)
                 {
                     if (tokens[i] != "")
