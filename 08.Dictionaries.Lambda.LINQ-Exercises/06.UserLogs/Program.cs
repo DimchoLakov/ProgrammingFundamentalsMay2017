@@ -20,7 +20,6 @@ namespace _06.UserLogs
             {
                 List<string> ipInfo = tokens[0].Split('=').ToList();
                 List<string> userInfo = tokens[2].Split('=').ToList();
-                List<string> message = tokens[1].Split('=').ToList();
 
                 string ipAdress = ipInfo[1];
                 string username = userInfo[1];
