@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.PopulationCount", "07.Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.LogsAggregator", "08.LogsAggregator\08.LogsAggregator.csproj", "{FC04EAC6-EDAF-4085-A748-110ADDBA073B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.LegendaryFarming", "09.LegendaryFarming\09.LegendaryFarming.csproj", "{D51FBBAF-4BB5-4CC5-871C-BF285B11BAA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{FC04EAC6-EDAF-4085-A748-110ADDBA073B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC04EAC6-EDAF-4085-A748-110ADDBA073B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC04EAC6-EDAF-4085-A748-110ADDBA073B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51FBBAF-4BB5-4CC5-871C-BF285B11BAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51FBBAF-4BB5-4CC5-871C-BF285B11BAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51FBBAF-4BB5-4CC5-871C-BF285B11BAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51FBBAF-4BB5-4CC5-871C-BF285B11BAA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
