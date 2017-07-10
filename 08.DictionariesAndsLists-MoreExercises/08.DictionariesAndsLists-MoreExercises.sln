@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SortTimes", "01.SortTimes\01.SortTimes.csproj", "{9542FCCE-5AA1-4769-AD0B-3E0F04D39C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.OddFilter", "02.OddFilter\02.OddFilter.csproj", "{4F888551-B010-49E6-946D-970A1207D2C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.ImmuneSystem", "03.ImmuneSystem\03.ImmuneSystem.csproj", "{EBD62086-5F2C-43C6-ACAC-6480327AAB97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9542FCCE-5AA1-4769-AD0B-3E0F04D39C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9542FCCE-5AA1-4769-AD0B-3E0F04D39C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9542FCCE-5AA1-4769-AD0B-3E0F04D39C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9542FCCE-5AA1-4769-AD0B-3E0F04D39C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F888551-B010-49E6-946D-970A1207D2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F888551-B010-49E6-946D-970A1207D2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F888551-B010-49E6-946D-970A1207D2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F888551-B010-49E6-946D-970A1207D2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD62086-5F2C-43C6-ACAC-6480327AAB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD62086-5F2C-43C6-ACAC-6480327AAB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD62086-5F2C-43C6-ACAC-6480327AAB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD62086-5F2C-43C6-ACAC-6480327AAB97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
