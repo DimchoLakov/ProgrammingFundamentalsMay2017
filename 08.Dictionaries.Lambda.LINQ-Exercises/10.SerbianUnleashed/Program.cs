@@ -17,105 +17,84 @@ namespace _10.SerbianUnleashed
 
             while (input != "End")
             {
-                bool isInputValid = CheckInput(input);
-                if (!isInputValid)
+                if (string.IsNullOrEmpty(input))
                 {
-                    return;
-                } 
-
-                string[] tokens = input.Split('@');
-                string tempSinger = tokens[0];
-                string[] singer = tempSinger.Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries);
-                string singerName = string.Join(" ", singer);
-                
-                string[] temp = tokens[1].Split(' ');
-
-                string venue = string.Empty;
-
-                long ticketPrice;
-                long ticketsCount;
-                bool isTicketValid = long.TryParse(temp[temp.Length - 1], out ticketsCount);
-                bool isPriceValid = long.TryParse(temp[temp.Length - 2], out ticketPrice);
-
-                if (temp.Length >= 3 && temp.Length <= 5 && singer.Length > 0 && singer.Length <= 3 && tempSinger.EndsWith(" ") && isPriceValid && isTicketValid)
-                {
-                    for (long i = 0; i < temp.Length - 2; i++)
-                    {
-                        venue += temp[i] + " ";
-                    }
-                    venue = venue.TrimEnd(' ');
-
-                    if (!events.ContainsKey(venue))
-                    {
-                        events.Add(venue, new Dictionary<string, long>());
-                    }
-
-                    if (!events[venue].ContainsKey(singerName))
-                    {
-                        events[venue].Add(singerName, ticketsCount * ticketPrice);
-                    }
-                    else
-                    {
-                        events[venue][singerName] += ticketsCount * ticketPrice;
-                    }
-
+                    input = Console.ReadLine();
+                    continue;
                 }
-
-                input = Console.ReadLine();
-                tokens = input.Split('@');
-
-            }
-
-            foreach (KeyValuePair<string, Dictionary<string, long>> destination in events)
-            {
-                Console.WriteLine(destination.Key);
-
-                var singerList = destination.Value.OrderByDescending(x => x.Value);
-
-                foreach (KeyValuePair<string, long> singerPair in singerList)
+                string[] temp = input.Split(' ');
+                bool isInputValid = false;
+                int count = 0;
+                for (int index = 0; index < temp.Length; index++)
                 {
-                    Console.WriteLine($"#  {singerPair.Key} -> {singerPair.Value}");
-                }
-            }
-
-        }
-
-        static bool CheckInput(string input)
-        {
-            int count = 0;
-
-            char[] symbols = input.ToCharArray();
-
-            if (symbols.Length == 1 && symbols[0] == '@')
-            {
-                return false;
-            }
-            else if (symbols.Length > 1 && symbols.Contains('@'))
-            {
-                for (int i = 0; i < symbols.Length; i++)
-                {
-                    if (symbols[i] == '@')
+                    if (temp[index].StartsWith("@"))
                     {
+                        isInputValid = true;
                         count++;
-                        if (count > 1)
+                    }
+                    
+                    if (count > 1)
+                    {
+                        isInputValid = false;
+                        break;
+                    }
+                }
+
+                if (temp.Length >= 4 && isInputValid)
+                {
+                    string[] tokens = input.Split('@');
+
+                    string name = tokens[0];
+                    string[] singerName = name.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                    string[] venue = tokens[1].Split(' ');
+                    string[] venueName = venue.Take(venue.Length - 2).ToArray();
+
+                    long ticketPrice;
+                    long ticketCount;
+
+                    bool isTicketCountValid = long.TryParse(venue[venue.Length - 1], out ticketCount);
+                    bool isTicketPriceValid = long.TryParse(venue[venue.Length - 2], out ticketPrice);
+
+                    if (name.EndsWith(" ") && singerName.Length > 0 && singerName.Length <= 3 && isTicketPriceValid
+                        && isTicketCountValid && venueName.Length > 0 && venueName.Length <= 3)
+                    {
+                        string singerRealName = string.Join(" ", singerName);
+                        string venueRealName = string.Join(" ", venueName);
+                        long money = ticketPrice * ticketCount;
+
+                        if (!events.ContainsKey(venueRealName))
                         {
-                            return false;
+                            events.Add(venueRealName, new Dictionary<string, long>());
+                        }
+
+                        if (!events[venueRealName].ContainsKey(singerRealName))
+                        {
+                            events[venueRealName].Add(singerRealName, money);
+                        }
+                        else
+                        {
+                            events[venueRealName][singerRealName] += money;
                         }
                     }
+
+
+                
                 }
+                
+                input = Console.ReadLine();
             }
-            else if (symbols.Length == 0)
+
+            foreach (KeyValuePair<string, Dictionary<string, long>> venuesAndSingers in events)
             {
-                return false;
-            }
-            else if (symbols.Length > 0)
-            {
-                if (!symbols.Contains('@'))
+                Console.WriteLine($"{venuesAndSingers.Key}");
+
+                foreach (KeyValuePair<string, long> singersAndIncome in venuesAndSingers.Value.OrderByDescending(x => x.Value))
                 {
-                    return false;
+                    Console.WriteLine($"#  {singersAndIncome.Key} -> {singersAndIncome.Value}");
                 }
             }
-            return true;
+
         }
     }
 }
