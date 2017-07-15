@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.ImmuneSystem", "03.Immun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SuperMarketDatabase", "04.SuperMarketDatabase\04.SuperMarketDatabase.csproj", "{39C19876-EF1E-4D15-9F3A-5C9D9E406092}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.ParkingValidation", "05.ParkingValidation\05.ParkingValidation.csproj", "{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{39C19876-EF1E-4D15-9F3A-5C9D9E406092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39C19876-EF1E-4D15-9F3A-5C9D9E406092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39C19876-EF1E-4D15-9F3A-5C9D9E406092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
