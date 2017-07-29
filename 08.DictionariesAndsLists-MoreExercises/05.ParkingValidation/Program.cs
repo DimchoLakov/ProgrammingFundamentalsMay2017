@@ -50,7 +50,8 @@ namespace _05.ParkingValidation
                             Console.WriteLine($"ERROR: license plate {licensePlateNumber} is busy");
                         }
                     }
-                    else if (parkingDatabase.ContainsKey(username) && !parkingDatabase.ContainsValue(licensePlateNumber))
+                    else if (parkingDatabase.ContainsKey(username) &&
+                             !parkingDatabase.ContainsValue(licensePlateNumber))
                     {
                         Console.WriteLine($"ERROR: already registered with plate number {parkingDatabase[username]}");
                     }
@@ -58,8 +59,6 @@ namespace _05.ParkingValidation
                     {
                         Console.WriteLine($"ERROR: invalid license plate {licensePlateNumber}");
                     }
-
-
                 }
                 else if (command == "unregister")
                 {
@@ -81,7 +80,6 @@ namespace _05.ParkingValidation
             {
                 Console.WriteLine($"{usernameLicensePlate.Key} => {usernameLicensePlate.Value}");
             }
-
 
         }
 
