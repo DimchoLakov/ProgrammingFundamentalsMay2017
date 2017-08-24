@@ -13,10 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SuperMarketDatabase", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.ParkingValidation", "05.ParkingValidation\05.ParkingValidation.csproj", "{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.ByteFlip", "06.ByteFlip\06.ByteFlip.csproj", "{BEDC2C7B-96BD-4409-8231-C6366967EDC1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.TakeSkipRope", "07.TakeSkipRope\07.TakeSkipRope.csproj", "{92032ED0-54E1-4BF7-9D98-E0381FF8D39F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,14 +39,6 @@ Global
 		{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D6E3155-D708-47E3-A0BC-5AEC79212BA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BEDC2C7B-96BD-4409-8231-C6366967EDC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEDC2C7B-96BD-4409-8231-C6366967EDC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEDC2C7B-96BD-4409-8231-C6366967EDC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEDC2C7B-96BD-4409-8231-C6366967EDC1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92032ED0-54E1-4BF7-9D98-E0381FF8D39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92032ED0-54E1-4BF7-9D98-E0381FF8D39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92032ED0-54E1-4BF7-9D98-E0381FF8D39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92032ED0-54E1-4BF7-9D98-E0381FF8D39F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
