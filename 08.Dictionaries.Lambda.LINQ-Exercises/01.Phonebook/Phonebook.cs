@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01.Phonebook
 {
@@ -26,13 +23,10 @@ namespace _01.Phonebook
                         string phoneNUmber = input[2];
 
                         phonebook[name] = phoneNUmber;
-
                         break;
-
                     case "S":
 
                         string searchName = input[1];
-                        
 
                         if (phonebook.ContainsKey(searchName))
                         {
@@ -42,12 +36,10 @@ namespace _01.Phonebook
                         {
                             Console.WriteLine($"Contact {searchName} does not exist.");
                         }
-
                         break;
                     case "END":
                         return;
                 }
-
             }
         }
     }

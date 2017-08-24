@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 
 namespace _10.SerbianUnleashed
 {
@@ -12,7 +9,7 @@ namespace _10.SerbianUnleashed
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            
+
             Dictionary<string, Dictionary<string, long>> events = new Dictionary<string, Dictionary<string, long>>();
 
             while (input != "End")
@@ -32,7 +29,7 @@ namespace _10.SerbianUnleashed
                         isInputValid = true;
                         count++;
                     }
-                    
+
                     if (count > 1)
                     {
                         isInputValid = false;
@@ -77,11 +74,8 @@ namespace _10.SerbianUnleashed
                             events[venueRealName][singerRealName] += money;
                         }
                     }
-
-
-                
                 }
-                
+
                 input = Console.ReadLine();
             }
 
@@ -94,7 +88,7 @@ namespace _10.SerbianUnleashed
                     Console.WriteLine($"#  {singersAndIncome.Key} -> {singersAndIncome.Value}");
                 }
             }
-
+            // 100%
         }
     }
 }

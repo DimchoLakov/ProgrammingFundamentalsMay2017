@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _11.DragonArmy
 {
@@ -52,7 +49,6 @@ namespace _11.DragonArmy
                 }
             }
 
-
             foreach (KeyValuePair<string, Dictionary<string, List<double>>> dragonType in dragons)
             {
                 double avgDamage = 0d;
@@ -75,9 +71,8 @@ namespace _11.DragonArmy
 
                     Console.WriteLine($"-{dragon.Key} -> damage: {dragonInfo[0]}, health: {dragonInfo[1]}, armor: {dragonInfo[2]}");
                 }
-
             }
-
+            // 100%
         }
     }
 }

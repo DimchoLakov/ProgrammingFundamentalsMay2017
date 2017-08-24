@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02.PhonebookUpgrade
 {
@@ -25,7 +21,6 @@ namespace _02.PhonebookUpgrade
 
                         string name = input[1];
                         string phoneNUmber = input[2];
-
                         phonebook[name] = phoneNUmber;
 
                         break;
@@ -33,7 +28,6 @@ namespace _02.PhonebookUpgrade
                     case "S":
 
                         string searchName = input[1];
-
 
                         if (phonebook.ContainsKey(searchName))
                         {
@@ -57,7 +51,6 @@ namespace _02.PhonebookUpgrade
                         //{
                         //    Console.WriteLine($"{contact.Key} -> {contact.Value}");
                         //}
-
 
                         break;
                     case "END":
