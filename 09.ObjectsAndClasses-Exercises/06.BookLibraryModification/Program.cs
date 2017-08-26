@@ -17,7 +17,7 @@ namespace _06.BookLibraryModification
         public string Title { get; set; }
         public string Publisher { get; set; }
         public DateTime ReleaseDate { get; set; }
-        public int ISBN { get; set; }
+        public int Isbn { get; set; }
         public double Price { get; set; }
 
         public static Book Parse(string author, string title, string publisher, DateTime releaseDate, int isbn, double price)
@@ -27,7 +27,7 @@ namespace _06.BookLibraryModification
                 Author = author,
                 Title = title,
                 Publisher = publisher,
-                ISBN = isbn,
+                Isbn = isbn,
                 Price = price,
                 ReleaseDate = releaseDate
             };
