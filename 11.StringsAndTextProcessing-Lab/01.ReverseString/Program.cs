@@ -10,6 +10,7 @@ namespace _01.ReverseString
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(string.Join("", Console.ReadLine().ToCharArray().Reverse()));
         }
     }
 }
