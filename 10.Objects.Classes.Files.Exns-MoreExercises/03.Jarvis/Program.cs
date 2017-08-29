@@ -108,11 +108,11 @@ namespace _03.Jarvis
             if (jarvis.Arms.Count >= 2 && jarvis.Legs.Count >= 2 && jarvis.Head.Count > 0 && jarvis.Torso.Count > 0)
             {
                 long consumedEnergy = jarvis.Arms.OrderBy(e => e.Energy).First().Energy
-                    + jarvis.Arms.OrderBy(e => e.Energy).Skip(1).First().Energy
-                    + jarvis.Legs.OrderBy(e => e.Energy).First().Energy
-                    + jarvis.Legs.OrderBy(e => e.Energy).Skip(1).First().Energy
-                    + jarvis.Head.OrderBy(e => e.Energy).First().Energy
-                    + jarvis.Torso.OrderBy(e => e.Energy).First().Energy;
+                                      + jarvis.Arms.OrderBy(e => e.Energy).Skip(1).First().Energy
+                                      + jarvis.Legs.OrderBy(e => e.Energy).First().Energy
+                                      + jarvis.Legs.OrderBy(e => e.Energy).Skip(1).First().Energy
+                                      + jarvis.Head.OrderBy(e => e.Energy).First().Energy
+                                      + jarvis.Torso.OrderBy(e => e.Energy).First().Energy;
 
                 if (consumedEnergy > energyCapacity)
                 {
@@ -147,7 +147,7 @@ namespace _03.Jarvis
                 Console.WriteLine($"###Processor size: {torso.Size:f1}");
                 Console.WriteLine($"###Corpus material: {torso.HousingMaterial}");
             }
-            
+
             foreach (Arms arm in jarvis.Arms.OrderBy(e => e.Energy).Take(2))
             {
                 Console.WriteLine($"#Arm:");
@@ -155,7 +155,7 @@ namespace _03.Jarvis
                 Console.WriteLine($"###Reach: {arm.Reach}");
                 Console.WriteLine($"###Fingers: {arm.FingersCount}");
             }
-            
+
             foreach (Legs leg in jarvis.Legs.OrderBy(e => e.Energy).Take(2))
             {
                 Console.WriteLine($"#Leg:");
