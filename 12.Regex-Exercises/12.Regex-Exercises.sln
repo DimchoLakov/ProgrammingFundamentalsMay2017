@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ExtractSentencesByKeywor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CameraView", "03.CameraView\03.CameraView.csproj", "{DDA14E60-760F-4D16-8C97-22BB3E89DCB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Weather", "04.Weather\04.Weather.csproj", "{FF8F73BA-731D-482D-A8F7-B518CF0252E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DDA14E60-760F-4D16-8C97-22BB3E89DCB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA14E60-760F-4D16-8C97-22BB3E89DCB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDA14E60-760F-4D16-8C97-22BB3E89DCB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8F73BA-731D-482D-A8F7-B518CF0252E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8F73BA-731D-482D-A8F7-B518CF0252E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8F73BA-731D-482D-A8F7-B518CF0252E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8F73BA-731D-482D-A8F7-B518CF0252E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
