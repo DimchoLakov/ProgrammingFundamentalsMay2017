@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Censorship", "01.Censorship\01.Censorship.csproj", "{2EDEE54F-48B0-4124-AB67-B08253D30152}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.EmailMe", "02.EmailMe\02.EmailMe.csproj", "{A2588EFD-E325-4654-88E4-F9EBB0344ECA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2EDEE54F-48B0-4124-AB67-B08253D30152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EDEE54F-48B0-4124-AB67-B08253D30152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EDEE54F-48B0-4124-AB67-B08253D30152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2588EFD-E325-4654-88E4-F9EBB0344ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2588EFD-E325-4654-88E4-F9EBB0344ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2588EFD-E325-4654-88E4-F9EBB0344ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2588EFD-E325-4654-88E4-F9EBB0344ECA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
