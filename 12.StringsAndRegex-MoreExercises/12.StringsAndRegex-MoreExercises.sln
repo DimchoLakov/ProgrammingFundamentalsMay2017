@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.EmailStatistics", "06.Em
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Hideout", "07.Hideout\07.Hideout.csproj", "{D96E7435-CC29-4B9F-86ED-1679CF855B87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Mines", "08.Mines\08.Mines.csproj", "{7E165DF4-A966-4ACF-BEAE-1DE68ED4C85D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D96E7435-CC29-4B9F-86ED-1679CF855B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D96E7435-CC29-4B9F-86ED-1679CF855B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D96E7435-CC29-4B9F-86ED-1679CF855B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E165DF4-A966-4ACF-BEAE-1DE68ED4C85D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E165DF4-A966-4ACF-BEAE-1DE68ED4C85D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E165DF4-A966-4ACF-BEAE-1DE68ED4C85D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E165DF4-A966-4ACF-BEAE-1DE68ED4C85D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
