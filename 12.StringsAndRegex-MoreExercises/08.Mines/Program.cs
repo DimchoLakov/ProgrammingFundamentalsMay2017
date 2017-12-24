@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace _08.Mines
 {
@@ -22,7 +21,7 @@ namespace _08.Mines
                 int leftIndex = Math.Max(0, startIndex - power);
                 int rightIndex = Math.Min(input.Length - 1, endIndex + power);
 
-                StringBuilder result = new StringBuilder(input);
+                StringBuilder result = new StringBuilder(input)
 
                 for (int i = leftIndex; i <= rightIndex; i++)
                 {
