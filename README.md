@@ -1,5 +1,5 @@
-# ProgrammingFundamentalsMay2017
-[Programming Fundamentals - May 2017](https://softuni.bg/trainings/1619/programming-fundamentals-may-2017)
+# Programming Fundamentals with C#
+[Programming Fundamentals](https://softuni.bg/trainings/1619/programming-fundamentals-may-2017)
 
 The “Programming Fundamentals” course extends the previously gained basic coding skills from the “Programming Basics” course at the Software University and adds additional knowledge and practical programming skills.
 
